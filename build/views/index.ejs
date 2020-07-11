@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi sala de chat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <h1 class="text-center">Sala de chat Socket.io DAWM</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" style="height: 90vh;  overflow: scroll;">
+                <h5 class="text-center">Participantes</h5>
+                <ul class="list-group" id="usuarios">
+                    <li class="list-group-item p-0 bordePersonalizado">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-12" style="height: 80vh; overflow: scroll;" id="scroll">
+                        <div id="messages"></div>
+                    </div>
+                    <div class="col-sm-12 p-0" style="height: 10vh;border: solid 2px gray;">
+                        <div class="input-group" style="width: 100% !important;
+                        height: 100%;">
+                            <input type="text" id="inputMsg" class="form-control" placeholder="Su mensaje..." style="height: 100%;">
+                            <div class="input-group-append" onclick="enviarMensaje()">
+                                <span class="input-group-text">&#10132;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

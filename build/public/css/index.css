@@ -1,0 +1,12 @@
+.fotoUsuario {
+    width: 100%;
+}
+
+.bordePersonalizado {
+    border: 2px solid #a7a3a3;
+}
+
+.centrado {
+    margin-top: auto;
+    margin-bottom: auto;
+}
